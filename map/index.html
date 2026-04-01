@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UK Low-Cost Air Quality Sensor Networks</title>
+  <meta property="og:title" content="UK Low-Cost Air Quality Sensor Networks">
+  <meta property="og:description" content="An open catalogue of 44 low-cost air quality sensor networks operating across the UK. Interactive map and dataset.">
+  <meta property="og:image" content="https://southlondonscientific.github.io/uk-lcs-networks/og-image.png">
+  <meta property="og:url" content="https://southlondonscientific.github.io/uk-lcs-networks/map/">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <style>
+    :root {
+      --gold: #E8A030;
+      --gold-light: #F5C870;
+      --gold-faint: #FDF3E0;
+      --cream: #FDF8F0;
+      --white: #FFFFFF;
+      --dark: #4A4A4A;
+      --dark-light: #6B6B6B;
+      --border: #ddd;
+      --shadow: 0 2px 8px rgba(0,0,0,0.08);
+      --radius: 8px;
+      --font-serif: 'EB Garamond', 'Century Schoolbook', Georgia, serif;
+      --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: var(--font-sans); background: var(--cream); color: var(--dark); }
+
+    header {
+      background: var(--white);
+      color: var(--dark);
+      padding: 1.2rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--border);
+      box-shadow: var(--shadow);
+    }
+    header h1 {
+      font-family: var(--font-serif);
+      font-size: 1.75rem;
+      font-weight: 500;
+      letter-spacing: -0.01em;
+      color: var(--dark);
+    }
+    header .subtitle { font-size: 0.85rem; color: var(--dark-light); margin-top: 0.2rem; }
+    header .credit { font-size: 0.75rem; color: var(--dark-light); text-align: right; }
+    header .credit a { color: var(--gold); text-decoration: none; }
+    header .credit a:hover { text-decoration: underline; }
+
+    .controls {
+      background: var(--white);
+      padding: 0.8rem 2rem;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      gap: 1.5rem;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .controls label { font-size: 0.85rem; color: var(--dark-light); font-weight: 500; }
+    .controls select {
+      padding: 0.3rem 0.6rem;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      font-size: 0.85rem;
+      font-family: var(--font-sans);
+      background: var(--white);
+      color: var(--dark);
+    }
+    .controls select:focus {
+      outline: none;
+      border-color: var(--gold);
+      box-shadow: 0 0 0 3px var(--gold-faint);
+    }
+    .stats {
+      margin-left: auto;
+      font-size: 0.85rem;
+      color: var(--dark-light);
+    }
+
+    #map { height: calc(100vh - 140px); width: 100%; }
+
+    .legend {
+      background: rgba(253,248,240,0.96);
+      padding: 12px 16px;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      line-height: 1.8;
+      font-size: 0.78rem;
+      color: var(--dark);
+      border: 1px solid var(--border);
+    }
+    .legend h4 {
+      margin-bottom: 6px;
+      font-family: var(--font-serif);
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: var(--dark);
+    }
+    .legend-item { display: flex; align-items: center; gap: 8px; }
+    .legend-dot {
+      width: 12px; height: 12px; border-radius: 50%;
+      display: inline-block; flex-shrink: 0;
+      border: 1.5px solid rgba(0,0,0,0.15);
+    }
+
+    .popup-content h3 {
+      font-family: var(--font-serif);
+      font-size: 1.1rem;
+      font-weight: 500;
+      margin-bottom: 6px;
+      color: var(--dark);
+    }
+    .popup-content .meta { font-size: 0.78rem; color: var(--dark-light); line-height: 1.6; }
+    .popup-content .meta strong { color: var(--dark); }
+    .popup-content .tag {
+      display: inline-block; padding: 2px 8px; border-radius: 20px;
+      font-size: 0.7rem; font-weight: 600; color: var(--white); margin-top: 4px;
+    }
+    .popup-content a { color: var(--gold); text-decoration: none; font-size: 0.78rem; }
+    .popup-content a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div>
+    <h1>UK Low-Cost Air Quality Sensor Networks</h1>
+    <div class="subtitle">An open catalogue of LCS monitoring deployments across the UK</div>
+  </div>
+  <div class="credit">
+    Maintained by <a href="https://southlondonscientific.com">South London Scientific</a><br>
+    <a href="https://github.com/southlondonscientific/uk-lcs-networks">Contribute on GitHub</a>
+  </div>
+</header>
+
+<div class="controls">
+  <div>
+    <label for="filter-status">Status:</label>
+    <select id="filter-status">
+      <option value="all">All</option>
+      <option value="Active">Active</option>
+      <option value="Completed">Completed</option>
+      <option value="Planned">Planned</option>
+    </select>
+  </div>
+  <div class="stats">
+    Showing <span id="count">44</span> of 44 networks
+  </div>
+</div>
+
+<div id="map"></div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+const map = L.map('map').setView([54.5, -2.5], 6);
+
+L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+  attribution: '&copy; <a href="https://carto.com/">CARTO</a> &copy; <a href="https://www.openstreetmap.org/copyright">OSM</a>',
+  maxZoom: 18
+}).addTo(map);
+
+const legend = L.control({ position: 'bottomright' });
+legend.onAdd = function() {
+  const div = L.DomUtil.create('div', 'legend');
+  div.innerHTML = `
+    <h4>Status</h4>
+    <div class="legend-item"><span class="legend-dot" style="background:#388E3C"></span> Active</div>
+    <div class="legend-item"><span class="legend-dot" style="background:#6B6B6B"></span> Completed</div>
+    <div class="legend-item"><span class="legend-dot" style="background:#1565C0"></span> Planned</div>
+  `;
+  return div;
+};
+legend.addTo(map);
+
+let markers = [];
+let geojsonData = null;
+
+function getStatusColour(status) {
+  if (status === 'Active') return '#388E3C';
+  if (status === 'Planned') return '#1565C0';
+  return '#6B6B6B';
+}
+
+function createMarker(feature) {
+  const p = feature.properties;
+  const [lon, lat] = feature.geometry.coordinates;
+  const colour = p.colour;
+
+  const marker = L.circleMarker([lat, lon], {
+    radius: 7,
+    fillColor: colour,
+    color: '#fff',
+    weight: 1.5,
+    opacity: 1,
+    fillOpacity: 0.85
+  });
+
+  const statusBg = getStatusColour(p.status);
+  const urlLink = p.url ? `<a href="${p.url}" target="_blank">Visit website &rarr;</a>` : '';
+
+  marker.bindPopup(`
+    <div class="popup-content">
+      <h3>${p.name}</h3>
+      <span class="tag" style="background:${statusBg}">${p.status}</span>
+      <div class="meta" style="margin-top:8px">
+        <strong>Geography:</strong> ${p.geography}<br>
+        <strong>Scale:</strong> ${p.scale}<br>
+        <strong>Owner:</strong> ${p.owner}<br>
+        <strong>Sensor:</strong> ${p.sensor}<br>
+        <strong>Goals:</strong> ${p.goals}
+      </div>
+      <div style="margin-top:8px">${urlLink}</div>
+    </div>
+  `, { maxWidth: 360 });
+
+  marker._props = p;
+  return marker;
+}
+
+function applyFilters() {
+  const statusVal = document.getElementById('filter-status').value;
+
+  markers.forEach(m => map.removeLayer(m));
+  markers = [];
+
+  let count = 0;
+  geojsonData.features.forEach(f => {
+    const p = f.properties;
+    const statusMatch = statusVal === 'all' || p.status.includes(statusVal);
+    if (statusMatch) {
+      const m = createMarker(f);
+      m.addTo(map);
+      markers.push(m);
+      count++;
+    }
+  });
+  document.getElementById('count').textContent = count;
+}
+
+fetch('../data/uk-lcs-networks.geojson')
+  .then(r => r.json())
+  .then(data => {
+    geojsonData = data;
+    applyFilters();
+  })
+  .catch(() => {
+    // Fallback: try relative to map folder
+    fetch('uk-lcs-networks.geojson')
+      .then(r => r.json())
+      .then(data => { geojsonData = data; applyFilters(); });
+  });
+
+document.getElementById('filter-status').addEventListener('change', applyFilters);
+</script>
+
+</body>
+</html>

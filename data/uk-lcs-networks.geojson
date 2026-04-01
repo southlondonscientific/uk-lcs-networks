@@ -1,0 +1,929 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.118,
+          51.509
+        ]
+      },
+      "properties": {
+        "name": "Breathe London",
+        "geography": "London (all 33 boroughs)",
+        "scale": "400+ sites (146 core + community)",
+        "owner": "GLA / Imperial College London ERG",
+        "sensor": "Clarity Node-S (Clarity Movement Co.)",
+        "status": "Active",
+        "goals": "Hyperlocal real-time AQ data for London; public engagement; ULEZ evaluation; school/hospital alerts",
+        "url": "https://www.breathelondon.org",
+        "colour": "#388E3C"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.224,
+          51.492
+        ]
+      },
+      "properties": {
+        "name": "Vortex / Hammersmith & Fulham",
+        "geography": "London Borough of Hammersmith & Fulham",
+        "scale": "500",
+        "owner": "LB Hammersmith & Fulham / Vortex IoT (Marston Holdings)",
+        "sensor": "VTX Air (Vortex IoT)",
+        "status": "Active",
+        "goals": "Borough-wide hyperlocal AQ; traffic management; pollution hotspot identification; 'greenest borough' ambition",
+        "url": "https://vortexiot.com/case-studies/hammersmith-and-fulham",
+        "colour": "#388E3C"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.89,
+          52.486
+        ]
+      },
+      "properties": {
+        "name": "West Midlands Combined Authority (WMCA)",
+        "geography": "West Midlands region (7 metropolitan boroughs)",
+        "scale": "90",
+        "owner": "WMCA / EarthSense",
+        "sensor": "EarthSense Zephyr",
+        "status": "Active",
+        "goals": "Region-wide PM monitoring; WHO threshold alerts; Clean Air Plan alternative to CAZ; public health warnings",
+        "url": "https://cleanair.wmca.org.uk",
+        "colour": "#388E3C"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.137,
+          50.823
+        ]
+      },
+      "properties": {
+        "name": "Brighton & Hove / Sussex",
+        "geography": "Brighton & Hove, Horsham, Newhaven (Sussex)",
+        "scale": "50",
+        "owner": "Brighton & Hove City Council / EarthSense",
+        "sensor": "EarthSense Zephyr",
+        "status": "Active",
+        "goals": "One of largest UK real-time networks; 12 AQMAs monitoring; port emissions; solid fuel burning ('Cosy Killer' campaign)",
+        "url": "https://portal.earthsense.co.uk/BrightonHoveandSussexPublic/",
+        "colour": "#388E3C"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.221,
+          52.192
+        ]
+      },
+      "properties": {
+        "name": "Worcestershire",
+        "geography": "Worcestershire (county-wide)",
+        "scale": "24",
+        "owner": "Worcestershire County Council / EarthSense",
+        "sensor": "EarthSense Zephyr",
+        "status": "Active",
+        "goals": "County-wide AQ policy evidence; EarthSense's 2nd largest UK network",
+        "url": "https://www.earthsense.co.uk/post/managed-air-quality-network-service",
+        "colour": "#388E3C"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.803,
+          51.591
+        ]
+      },
+      "properties": {
+        "name": "Neath Port Talbot",
+        "geography": "Port Talbot, Wales (Margam to Baglan)",
+        "scale": "70",
+        "owner": "Neath Port Talbot Council / Vortex IoT",
+        "sensor": "VTX Air (Vortex IoT)",
+        "status": "Active",
+        "goals": "Industrial emissions monitoring (near Tata Steel); community-level pollution mapping; intervention targeting",
+        "url": "https://vortexiot.com/case-studies/neath-port-talbot",
+        "colour": "#388E3C"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.943,
+          51.622
+        ]
+      },
+      "properties": {
+        "name": "Swansea Smart City",
+        "geography": "Swansea, Wales",
+        "scale": "~20-30 (est.)",
+        "owner": "Swansea Council / Vortex IoT / Swansea University",
+        "sensor": "VTX Air (Vortex IoT)",
+        "status": "Active",
+        "goals": "Smart city AQ + parking detection; connected to CCTV network",
+        "url": "https://vortexiot.com",
+        "colour": "#388E3C"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.549,
+          53.801
+        ]
+      },
+      "properties": {
+        "name": "Sensing Leeds / West Yorkshire PIIP",
+        "geography": "Leeds + West Yorkshire",
+        "scale": "200+ PurpleAir (research) + ~40 council",
+        "owner": "University of Leeds (Jim McQuaid) / Leeds City Council / WYCA",
+        "sensor": "PurpleAir PA-II",
+        "status": "Active",
+        "goals": "Research: domestic burning patterns, degree-day analysis; Council: public health messaging, West Yorkshire dashboard",
+        "url": "https://environment.leeds.ac.uk",
+        "colour": "#388E3C"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.992,
+          53.408
+        ]
+      },
+      "properties": {
+        "name": "Aeternum Liverpool",
+        "geography": "Liverpool (city-wide, inc. 10A bus route)",
+        "scale": "56",
+        "owner": "University of Liverpool (GeoDS) / Aeternum Innovations",
+        "sensor": "Aeternum micro-sensors (AlphaSense OPC-N3 + EC NO2)",
+        "status": "Active",
+        "goals": "Research: urban AQ characterisation; source apportionment potential; bus route exposure",
+        "url": "https://data.geods.ac.uk/dataset/air-pollution-sensors-in-liverpool",
+        "colour": "#388E3C"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.116,
+          51.461
+        ]
+      },
+      "properties": {
+        "name": "Airly / Lambeth",
+        "geography": "London Borough of Lambeth",
+        "scale": "60",
+        "owner": "Lambeth Council / Airly",
+        "sensor": "Airly sensors (MCERTS-certified PM)",
+        "status": "Active",
+        "goals": "Borough-wide real-time AQ; public engagement; policy evidence",
+        "url": "https://airly.org/en/",
+        "colour": "#388E3C"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.89,
+          52.486
+        ]
+      },
+      "properties": {
+        "name": "Airly / Birmingham Schools",
+        "geography": "Birmingham (schools)",
+        "scale": "~20-30 (est.)",
+        "owner": "Birmingham City Council / Airly",
+        "sensor": "Airly sensors",
+        "status": "Active (1-year initiative)",
+        "goals": "School AQ awareness; #TimeToAct campaign; behaviour change",
+        "url": "https://airly.org/en/",
+        "colour": "#6B6B6B"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.088,
+          51.265
+        ]
+      },
+      "properties": {
+        "name": "Airly / AcSoft UK-wide",
+        "geography": "Multiple UK locations",
+        "scale": "200+",
+        "owner": "AcSoft (distributor) / various clients",
+        "sensor": "Airly sensors (MCERTS-certified PM)",
+        "status": "Active",
+        "goals": "Commercial distribution; public sector AQ monitoring",
+        "url": "https://airly.org/en/case-studies/smart-scalable-air-quality-monitoring-for-the-uk-market/",
+        "colour": "#388E3C"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.264,
+          52.371
+        ]
+      },
+      "properties": {
+        "name": "Rugby Borough Council",
+        "geography": "Rugby, Warwickshire",
+        "scale": "7",
+        "owner": "Rugby Borough Council",
+        "sensor": "Airly sensors",
+        "status": "Active",
+        "goals": "Indicative screening for LAQM",
+        "url": "https://laqm.defra.gov.uk",
+        "colour": "#388E3C"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.098,
+          52.145
+        ]
+      },
+      "properties": {
+        "name": "South Cambridgeshire",
+        "geography": "South Cambridgeshire",
+        "scale": "3",
+        "owner": "South Cambridgeshire District Council",
+        "sensor": "EarthSense Zephyr",
+        "status": "Active",
+        "goals": "Short-term AQ studies; real-time indicative monitoring",
+        "url": "https://scambs.gov.uk",
+        "colour": "#388E3C"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.5,
+          52.5
+        ]
+      },
+      "properties": {
+        "name": "RSSB Rail Station AQMN",
+        "geography": "72 mainline stations (England, Scotland, Wales)",
+        "scale": "72 stations (diffusion tubes + selected LCS + reference)",
+        "owner": "RSSB / Network Rail / Train Operating Companies",
+        "sensor": "AQMesh pods (at selected stations); diffusion tubes (all stations)",
+        "status": "Active",
+        "goals": "Rail-specific AQ evidence; DfT policy compliance; station air quality plans (all by end 2026)",
+        "url": "https://www.rssb.co.uk/sustainability/clean-air/air-quality-monitoring-for-the-rail-industry",
+        "colour": "#388E3C"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.5,
+          53.0
+        ]
+      },
+      "properties": {
+        "name": "Sensor.Community UK",
+        "geography": "UK-wide (distributed, urban/suburban)",
+        "scale": "~500-700 (est. from global map)",
+        "owner": "Citizen volunteers (self-organised)",
+        "sensor": "SDS011 / SPS30 (Sensirion) / BME280; DIY build",
+        "status": "Active",
+        "goals": "Citizen science democratisation of AQ data; open data; community empowerment",
+        "url": "https://sensor.community/en/",
+        "colour": "#388E3C"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.251,
+          55.86
+        ]
+      },
+      "properties": {
+        "name": "BEACO2N Glasgow",
+        "geography": "Glasgow, Scotland",
+        "scale": "~25",
+        "owner": "UC Berkeley / University of Strathclyde / Glasgow City Council",
+        "sensor": "BEACO2N nodes (custom: electrochemical + OPC)",
+        "status": "Active",
+        "goals": "GHG + AQ monitoring; urban emissions research; COP26 legacy",
+        "url": "https://beacon.berkeley.edu",
+        "colour": "#388E3C"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.902,
+          52.479
+        ]
+      },
+      "properties": {
+        "name": "Birmingham LoCoSA Research",
+        "geography": "Birmingham (mobile + fixed deployments)",
+        "scale": "Variable (research campaigns)",
+        "owner": "University of Birmingham (Pope, Bousiotis, Harrison, Beddows)",
+        "sensor": "Various LCS (OPC-based PM sensors); mobile platforms",
+        "status": "Active (research)",
+        "goals": "Low-Cost Source Apportionment (LoCoSA) methodology development; 100m-grid pollution mapping; citizen science SA",
+        "url": "https://research.birmingham.ac.uk",
+        "colour": "#6B6B6B"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.08,
+          53.958
+        ]
+      },
+      "properties": {
+        "name": "QUANT Study (York/Manchester/London)",
+        "geography": "Manchester (MAQS), London (LAQS), York (YoFi AURN)",
+        "scale": "49 devices from 14 manufacturers",
+        "owner": "University of York / University of Manchester / Imperial College London",
+        "sensor": "AQMesh, Aeroqual AQY, QuantAQ ARIsense, PurpleAir, EarthSense Zephyr",
+        "status": "Completed",
+        "goals": "Systematic long-term evaluation of commercial LCS; PAS 4023 guidance development",
+        "url": "https://amt.copernicus.org/articles/17/3809/2024/",
+        "colour": "#6B6B6B"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.24,
+          53.472
+        ]
+      },
+      "properties": {
+        "name": "NERC Air Quality Supersites",
+        "geography": "Manchester, London, Birmingham",
+        "scale": "3 supersites (reference + LCS)",
+        "owner": "University of Manchester / Imperial College / University of Birmingham",
+        "sensor": "Reference instruments + co-located LCS (various)",
+        "status": "Active",
+        "goals": "National AQ research infrastructure; LCS co-location and calibration; urban pollution characterisation",
+        "url": "https://www.imperial.ac.uk/air-quality/",
+        "colour": "#388E3C"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.228,
+          53.011
+        ]
+      },
+      "properties": {
+        "name": "Newcastle-under-Lyme / Staffordshire",
+        "geography": "Newcastle-under-Lyme, Staffordshire",
+        "scale": "18",
+        "owner": "Now Wireless / Staffordshire CC / Connected Places Catapult",
+        "sensor": "AirNodes (Now Wireless — electrochemical + OPC)",
+        "status": "Completed",
+        "goals": "Dense urban network evaluation; local vs regional PM source separation",
+        "url": "https://acp.copernicus.org/articles/22/13949/2022/",
+        "colour": "#6B6B6B"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.224,
+          51.51
+        ]
+      },
+      "properties": {
+        "name": "Imperial WellHome Study",
+        "geography": "White City, West London",
+        "scale": "100+ households",
+        "owner": "Imperial College London (NExAir group)",
+        "sensor": "Indoor AQ sensors (various LCS)",
+        "status": "Active (research)",
+        "goals": "Indoor/outdoor AQ in homes; children's asthma exposure; household-level sensor network",
+        "url": "https://www.imperial.ac.uk/air-quality/",
+        "colour": "#6B6B6B"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.121,
+          52.205
+        ]
+      },
+      "properties": {
+        "name": "open-seneca",
+        "geography": "Cambridge + various UK (mobile campaigns)",
+        "scale": "Variable (campaign-based)",
+        "owner": "University of Cambridge (student-led)",
+        "sensor": "Custom-built LCS (open-source design)",
+        "status": "Active (intermittent)",
+        "goals": "Citizen science AQ sensing; open-source hardware; community engagement",
+        "url": "https://www.open-seneca.org/",
+        "colour": "#6B6B6B"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.5,
+          52.5
+        ]
+      },
+      "properties": {
+        "name": "BT / Vortex National",
+        "geography": "Various UK locations",
+        "scale": "350+ deployed; 350+ planned",
+        "owner": "BT / Vortex IoT",
+        "sensor": "VTX Air (Vortex IoT)",
+        "status": "Active",
+        "goals": "Leveraging BT telecom infrastructure for AQ monitoring; smart city services",
+        "url": "https://vortexiot.com",
+        "colour": "#388E3C"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.5,
+          52.5
+        ]
+      },
+      "properties": {
+        "name": "AQMesh Various UK",
+        "geography": "Multiple UK cities and sites",
+        "scale": "Unknown (many individual deployments)",
+        "owner": "Various (councils, rail, industry, research)",
+        "sensor": "AQMesh pods (Environmental Instruments Ltd)",
+        "status": "Active",
+        "goals": "Regulatory screening; research; industrial; rail; construction",
+        "url": "https://www.aqmesh.com",
+        "colour": "#388E3C"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.587,
+          51.454
+        ]
+      },
+      "properties": {
+        "name": "Clean Air for Bristol (Sensor.Community cluster)",
+        "geography": "Bristol",
+        "scale": "~30-50 (est.)",
+        "owner": "Clean Air for Bristol (community group) / citizens",
+        "sensor": "Sensor.Community DIY (SDS011/SPS30)",
+        "status": "Active",
+        "goals": "Citizen science; CAZ evaluation; community empowerment",
+        "url": "https://www.cleanairforbristol.org",
+        "colour": "#388E3C"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.3,
+          55.796
+        ]
+      },
+      "properties": {
+        "name": "SEPA CleanAir@School Programme",
+        "geography": "East Renfrewshire, North Lanarkshire, Glasgow (schools across Scotland)",
+        "scale": "~8-12 schools (AQMesh pods + low-cost sensors)",
+        "owner": "SEPA / local authorities (East Renfrewshire Council, North Lanarkshire Council)",
+        "sensor": "AQMesh pods (3 in East Renfrewshire); low-cost PM sensors for schools",
+        "status": "Active",
+        "goals": "School-gate AQ evidence for behaviour change; anti-idling campaigns; active travel promotion; citizen science education (1,200 pupils, 50 classes in 2024)",
+        "url": "https://environment.gov.scot/our-environment/air/air-quality-projects/",
+        "colour": "#388E3C"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.186,
+          56.117
+        ]
+      },
+      "properties": {
+        "name": "Stirlingshire Villages Project",
+        "geography": "Stirlingshire villages: Aberfoyle, Doune, Deanston, Fintry, Kippen, Thornhill",
+        "scale": "Lamppost-mounted monitors + resident-deployed portable sensors (6 villages)",
+        "owner": "University of Stirling / SEPA / Stirling Council",
+        "sensor": "Lamppost-mounted LCS + portable PM sensors (loaned to residents)",
+        "status": "Completed",
+        "goals": "Community empowerment; rural AQ evidence; solid fuel burning detection; behaviour change in villages",
+        "url": "https://environment.gov.scot/our-environment/air/air-quality-projects/stirlingshire-villages-project/",
+        "colour": "#6B6B6B"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.937,
+          56.117
+        ]
+      },
+      "properties": {
+        "name": "Forth-ERA (air quality component)",
+        "geography": "Forth catchment area, Central Scotland",
+        "scale": "AQ sensors within 1,000+ sensor digital observatory",
+        "owner": "University of Stirling / SEPA / Stirling & Clackmannanshire councils",
+        "sensor": "Multi-parameter environmental sensors (AQ + water + biodiversity)",
+        "status": "Active",
+        "goals": "Catchment-scale digital observatory; real-time environmental monitoring; 'living laboratory' for Forth region",
+        "url": "https://www.stir.ac.uk/about/scotlands-international-environment-centre/environmental-data-services/forth-era/",
+        "colour": "#388E3C"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.189,
+          55.953
+        ]
+      },
+      "properties": {
+        "name": "Scotland LEZ Monitoring (Glasgow, Edinburgh, Dundee, Aberdeen)",
+        "geography": "Glasgow, Edinburgh, Dundee, Aberdeen city centres",
+        "scale": "Reference monitors + diffusion tubes (4 cities); some LCS",
+        "owner": "Glasgow CC, Edinburgh CC, Dundee CC, Aberdeen CC / SEPA",
+        "sensor": "Reference AURN monitors + diffusion tubes; some co-located LCS",
+        "status": "Active",
+        "goals": "LEZ compliance monitoring and evaluation; evidence for Scotland's 4 LEZs (enforcement 2023-2024)",
+        "url": "https://www.scottishairquality.scot",
+        "colour": "#388E3C"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.93,
+          54.597
+        ]
+      },
+      "properties": {
+        "name": "Belfast City Council (Zephyr Assessment)",
+        "geography": "Belfast, Northern Ireland",
+        "scale": "Multiple Zephyrs (number unspecified)",
+        "owner": "Belfast City Council",
+        "sensor": "EarthSense Zephyr",
+        "status": "Completed",
+        "goals": "Detailed AQ assessment; emissions inventory; dispersion modelling input",
+        "url": "https://www.airqualityni.co.uk",
+        "colour": "#6B6B6B"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.614,
+          54.978
+        ]
+      },
+      "properties": {
+        "name": "Newcastle Urban Observatory",
+        "geography": "Newcastle and Gateshead, Tyne and Wear",
+        "scale": "55 AQMesh + 6 reference stations",
+        "owner": "Newcastle University (Urban Observatory)",
+        "sensor": "AQMesh pods",
+        "status": "Active",
+        "goals": "Smart city digital twin; multi-parameter urban monitoring (AQ, water, noise, traffic, energy); research infrastructure",
+        "url": "https://www.urbanobservatory.ac.uk",
+        "colour": "#388E3C"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.61,
+          54.978
+        ]
+      },
+      "properties": {
+        "name": "Newcastle Schools AQ Monitoring",
+        "geography": "Newcastle upon Tyne (22 schools)",
+        "scale": "22",
+        "owner": "Newcastle University / Newcastle City Council",
+        "sensor": "AQMesh pods",
+        "status": "Completed",
+        "goals": "School-gate exposure assessment; WHO guideline exceedance identification; children's health evidence",
+        "url": "https://www.mdpi.com/2073-4433/13/2/172",
+        "colour": "#6B6B6B"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.14,
+          52.637
+        ]
+      },
+      "properties": {
+        "name": "Leicester City Council",
+        "geography": "Leicester (city-wide)",
+        "scale": "23",
+        "owner": "Leicester City Council / EarthSense",
+        "sensor": "EarthSense Zephyr",
+        "status": "Active",
+        "goals": "City-wide PM mapping; public engagement in PM2.5 health impacts; LAQM evidence",
+        "url": "https://www.leicester.gov.uk",
+        "colour": "#388E3C"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.999,
+          51.588
+        ]
+      },
+      "properties": {
+        "name": "Newport Eco Post Sensors",
+        "geography": "Newport, Wales (6 locations)",
+        "scale": "6",
+        "owner": "Newport City Council",
+        "sensor": "Eco Post (first UK deployment)",
+        "status": "Active",
+        "goals": "Public-facing real-time AQ display; school-gate and AQMA monitoring; first UK Eco Post deployment",
+        "url": "https://www.newport.gov.uk/newsroom/2024/air-quality-sensors-installed-key-locations-across-city",
+        "colour": "#388E3C"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.78,
+          52.13
+        ]
+      },
+      "properties": {
+        "name": "Welsh Government School Sensor Programme",
+        "geography": "Wales-wide (planned)",
+        "scale": "TBD (bidding process)",
+        "owner": "Welsh Government / local authorities",
+        "sensor": "TBD",
+        "status": "Planned (2025-2028)",
+        "goals": "School-based community sensor networks; AQ education extending beyond classroom",
+        "url": "https://www.gov.wales/promoting-awareness-air-pollution-wales-delivery-plan-2025-2028-html",
+        "colour": "#6B6B6B"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.31,
+          51.06
+        ]
+      },
+      "properties": {
+        "name": "Hampshire / tEC Citizen Science Network",
+        "geography": "Hampshire (county-wide, 17 locations)",
+        "scale": "17",
+        "owner": "the Environment Centre (tEC) / University of Southampton",
+        "sensor": "PM2.5 sensors (type unspecified)",
+        "status": "Completed",
+        "goals": "Neighbourhood-level PM2.5 mapping; citizen science; community engagement; solid fuel burning identification",
+        "url": "https://environmentcentre.com",
+        "colour": "#6B6B6B"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.404,
+          50.909
+        ]
+      },
+      "properties": {
+        "name": "Southampton Schools (Airly)",
+        "geography": "Southampton (7 schools/kindergartens)",
+        "scale": "7",
+        "owner": "Southampton City Council / Airly",
+        "sensor": "Airly sensors",
+        "status": "Active",
+        "goals": "School AQ awareness; real-time public display; behaviour change; policy evidence",
+        "url": "https://airly.org/en/case-studies/southampton-city-council/",
+        "colour": "#388E3C"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.347,
+          53.744
+        ]
+      },
+      "properties": {
+        "name": "ABP Ports Network (EarthSense)",
+        "geography": "8+ ports: Lowestoft, King's Lynn, Hull, Immingham, Troon, Barrow, Newport, Barry, Southampton",
+        "scale": "16+ (doubled in 2024)",
+        "owner": "Associated British Ports (ABP) / EarthSense",
+        "sensor": "EarthSense Zephyr",
+        "status": "Active",
+        "goals": "Port sustainability compliance; near-urban community AQ evidence; emissions monitoring",
+        "url": "https://www.earthsense.co.uk/post/associated-british-ports-doubles-its-air-quality-network-with-earthsense-zephyr-monitors",
+        "colour": "#388E3C"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.352,
+          51.954
+        ]
+      },
+      "properties": {
+        "name": "Hutchison Ports (South Coast Science)",
+        "geography": "Felixstowe, Harwich International, London Thamesport",
+        "scale": "6 (2 per port)",
+        "owner": "Hutchison Port Holdings / South Coast Science",
+        "sensor": "Praxis/Urban (South Coast Science)",
+        "status": "Active",
+        "goals": "Port emissions monitoring; SO2 measurement (shipping-relevant)",
+        "url": "https://www.southcoastscience.com/three-uk-ports-take-lead-on-air-quality-monitoring/",
+        "colour": "#388E3C"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.454,
+          51.47
+        ]
+      },
+      "properties": {
+        "name": "Heathrow SNAQ",
+        "geography": "Heathrow Airport perimeter and flight paths",
+        "scale": "~30 nodes (research deployment)",
+        "owner": "University of Cambridge / Heathrow Airport Ltd",
+        "sensor": "Custom nodes (Alphasense OPC + electrochemical)",
+        "status": "Completed (legacy ongoing)",
+        "goals": "Airport perimeter AQ characterisation; flight path emission mapping; sensor technology development (led to Alphasense OPC-N2 commercial product)",
+        "url": "https://www.researchgate.net/publication/258772595",
+        "colour": "#6B6B6B"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.572,
+          51.237
+        ]
+      },
+      "properties": {
+        "name": "University of Surrey GCARE / Guildford",
+        "geography": "Guildford town centre",
+        "scale": "10 (indoor, town centre building)",
+        "owner": "University of Surrey (GCARE) / Zero Carbon Guildford",
+        "sensor": "Low-cost PM sensors (type unspecified)",
+        "status": "Active (intermittent)",
+        "goals": "Real-time public-facing AQ display; citizen science; behaviour change; community empowerment",
+        "url": "https://www.surrey.ac.uk/global-centre-clean-air-research",
+        "colour": "#6B6B6B"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.527,
+          50.724
+        ]
+      },
+      "properties": {
+        "name": "University of Exeter SmogOff",
+        "geography": "Exeter (community groups)",
+        "scale": "Variable (citizen science kit)",
+        "owner": "University of Exeter",
+        "sensor": "Custom open-source design (SmogOff)",
+        "status": "Active (research)",
+        "goals": "Open-source sensor design for community replication; citizen science; public engagement with research",
+        "url": "https://sites.exeter.ac.uk/per/2026/02/09/smogoff-community-testing-of-air-pollution/",
+        "colour": "#6B6B6B"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.395,
+          52.753
+        ]
+      },
+      "properties": {
+        "name": "West Norfolk (single Zephyr)",
+        "geography": "King's Lynn, West Norfolk",
+        "scale": "1",
+        "owner": "Borough Council of King's Lynn & West Norfolk",
+        "sensor": "EarthSense Zephyr",
+        "status": "Active",
+        "goals": "Targeted hot-spot monitoring at highest-NO2 location (Railway Road)",
+        "url": "https://www.west-norfolk.gov.uk",
+        "colour": "#388E3C"
+      }
+    }
+  ]
+}
